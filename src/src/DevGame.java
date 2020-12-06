@@ -18,12 +18,24 @@ public class DevGame {
             command = scanner.nextLine();
 
             switch (command){
+                case "1":
+                    startNewGame();
+                    break;
 
+                case "2":
+                    openOptionsMenu();
+                    break;
+
+                case "3":
+                    break;
+
+                default:
+                    System.out.println("Command not recognized. Please try again!");
             }
 
 
         }
-        while (!command.equals("4"));
+        while (!command.equals("3"));
 
 
     }
